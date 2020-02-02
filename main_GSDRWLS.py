@@ -328,9 +328,9 @@ if __name__ == '__main__':
     parser.add_argument('--epochs', type=int, default=150)
     parser.add_argument('--alpha', type=float, default=0.9)
     parser.add_argument('--seed', type=int, default=1)
-    parser.add_argument('--print-freq', type=int, default=10) #测试的间隔
-    parser.add_argument('--economic', action='store_true') #开启经济模式，每个多个epoch测试一次并保存模型
-    parser.add_argument('--recordpoint', type=int, default=50) #从该epoch开始，每次进行模型测试和保存
+    parser.add_argument('--print-freq', type=int, default=10) 
+    parser.add_argument('--economic', action='store_true') 
+    parser.add_argument('--recordpoint', type=int, default=50) 
     # metric learning
     parser.add_argument('--dist-metric', type=str, default='euclidean',
                         choices=['euclidean', 'kissme'])
